@@ -1,251 +1,255 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="stylesheet" href="responsive.css" type="text/css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
-    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
-    <title> My Resume </title>
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-queries.css">
 </head>
 <body>
-    <header id="body-header">
-        <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>
-            </label>
-            <ul class="horizontal-list text-center nav-menu">
-                <li><a href="#" > Home </a></li>
-                <li><a href="#about" > About </a></li>
-                <li><a href="#skills" > Skills </a></li>
-                <li><a href="#experience" > Experience </a></li>
-                <li><a href="#education" > Education </a></li>
-                <li><a href="#portfolio" > Portfolio </a></li>
-                <li><a href="#contact" > Contact </a></li>
-            </ul>
-        </nav>
+    <!----top banner------>
 
-        <div id="name-social-container">
-            <div id="header-name" class="text-center">
-                <h1 class="no-bold">Adrish Bhattacharya</h1>
+    <div class="top-banner">
+     <div class="container">
+         <div class="small-bold-text banner-text">😎 New to Usability Hub: Open and Closed card sorting</div>
+       </div>
+    </div>
+
+    <nav>
+        <div class="container main-nav flex">
+            <a href="#" class="company-logo">
+                <img src="./ASSETS/asset 1.png" alt="company logo">
+
+            </a>
+            <div class="nav-links">
+             <ul class="flex">
+                <li><a href="#"class="hover-links">Products</a></li>
+                <li><a href="#"class="hover-links">Customers</a></li>
+                <li><a href="#"class="hover-links">Pricing</a></li>
+                <li><a href="#"class="hover-links">Resources</a></li>
+                <li><a href="#"class="hover-links secondary-button">Sign In</a></li>
+                <li><a href="#"class="hover-links primary-button">Sign Up</a></li>
+             </ul>
+
             </div>
-            <div>
-                <ul class="horizontal-list text-center social-links">
-                    <li><a href="https://www.linkedin.com/in/adrish-bhattacharya-2a536a205/" ><i class="fab fa-linkedin-in"></i></a></li>
-                    <li>
-                        <a href="https://stackoverflow.com/users/20955435/adrish-bhattacharya" ><i class="fab fa-stack-overflow"></i></a>
-                    </li>
-                    <li>
-                        <a href="#" ><i class="fab fa-google-plus-g"></i></a>
-                    </li>
-                    <li>
-                        <a href="#" ><i class="fab fa-facebook-f"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.quora.com/profile/Adrish-Bhattacharya-14" ><i class="fab fa-quora"></i></a>
-                    </li>
-                </ul>
-            </div>
+            <a href="#" class="nav-toggle hover-links"></a>
+        </div>
+    </nav>
+    <header>
+        <div class="container header-section flex">
+         <div class="header-left">
+            <h1>Design Confidently</h1>
+            <p>UsabilityHub is a remote user research platform that takes the guesswork out of design decisions by validating them with real users.</p>
+            <a href="#" class="primary-button get-started-btn">Get Started</a>
+         </div>
+         <div class="header-right"><img src="./ASSETS/asset 2.png" alt="hero image"></div>
+         
         </div>
     </header>
-    <main>
+    <section class="companies-section">
+     <div class="container">
+      <div class="small-bold-text companies-header">The world’s best companies rely on UsabilityHub to make better design decisions.</div>
+      <div class="logos flex">
+        <img class="logo" src="ASSETS/asset 3.png" alt="">
+        <img class="logo" src="ASSETS/asset 4.png" alt="">
+        <img class="logo" src="ASSETS/asset 5.png" alt="">
+        <img class="logo" src="ASSETS/asset 6.png" alt="">
+        <img class="logo" src="ASSETS/asset 7.png" alt="">
+        <img class="logo" src="ASSETS/asset 9.png" alt="">
+        <img class="logo" src="ASSETS/asset 22.png" alt="">
+        <img class="logo" src="ASSETS/asset 8.svg" alt="">
+      </div> 
+    </div>
 
-        <section id="about">
-            <img id="profile-image" src="avatar.jpeg">
-            <div id="self-info">
-                <p> Hi I am Adrish 😄! I am a Third year Undergraduate student at<span> Institute Of Engineering And Management, Kolkata</span>.I am an eager and enthusiastic learner with keen interests in<span> Web Development💻. </span>With Every Passing Day I try to build upon new skills and learn new technologies <span>I am currently learning JavaScript and React. </span> My Chief Coursework includes Data Structures, Algorithms and Object Oriented Programming. </p>
-            </div>
-        </section>
+    </section>
 
-        <section id="skills">
-            <div class="section-heading">
-                <i class="fas fa-chalkboard-teacher"></i><span>Skills</span>
-            </div>
-            <div id="skills-container">
-                <div class="skill-progress"><div id="skill-1" class="fifty-percent"><div class="skill-name">C++</div></div></div>
-                <div class="skill-progress"><div id="skill-2" class="eighty-five-percent"><div class="skill-name">HTML</div></div></div>
-                <div class="skill-progress"><div id="skill-3" class="eighty-five-percent"><div class="skill-name">CSS</div></div></div>
-                <div class="skill-progress"><div id="skill-4" class="fifty-percent"><div class="skill-name">Javascript</div></div></div>
-                <div class="skill-progress"><div id="skill-5" class="fifty-percent"><div class="skill-name">Azure</div></div></div>
-                <div class="skill-progress"><div id="skill-6" class="eighty-five-percent"><div class="skill-name">Numpy</div></div></div>
-                <div class="skill-progress"><div id="skill-7" class="fifty-five-percent"><div class="skill-name">Pandas</div></div></div>
-                <div class="skill-progress"><div id="skill-8" class="fifty-percent"><div class="skill-name">Matplotlib</div></div></div>
-            </div>
-        </section>
 
-        <section id="experience">
-            <div class="section-heading">
-                <i class="fas fa-briefcase"></i><span>Work Experience</span>
+    <section class="features-section">
+        <div class="container">
+            <div class="features-header">
+                <h2 class="features-heading-text">Your user research Swiss Army knife</h2>
+                <a href="#" class="secondary-button">See all features <i class="fa-solid fa-right-long"></i></a>
             </div>
-            <div class="timeline">
-                <div class="timeline-box">
-                    <div class="timeline-head">
-                        <img src="">
-                        <h1>Designation</h1>
-                        <h4 class="no-bold">Company Name</h4>
-                        <h6 class="no-bold">Month YYYY - Month YYYY</h6>
-                    </div>
-                    <div class="timeline-body">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum sequi dolorem explicabo minus, magnam, natus veniam sunt et nemo corporis odio? Earum, molestias, corrupti tenetur id iusto omnis quo fuga vitae sunt voluptate, excepturi minus! Explicabo, quo corporis cupiditate porro consectetur facilis deleniti nobis voluptatem eos error et molestiae, tempora optio accusantium? Veritatis impedit, eos quis doloremque quae asperiores omnis adipisci perspiciatis reprehenderit minus molestiae quod quasi neque eligendi pariatur!</p>
-                    </div>
+            <div class="features-area flex">
+                <div class="features-card flex">
+                    <img src="ASSETS/asset 11.svg" alt="">
+                    <h3>Card Sorting</h3>
+                    <p>Discover how people group and label information.</p>
+                    <a href="#" class="secondary-button">Learn More <i class="fa-solid fa-right-long"></i></a>
                 </div>
-                <div class="timeline-box">
-                    <div class="timeline-head">
-                        <img src="">
-                        <h1>Designation</h1>
-                        <h4 class="no-bold">Company Name</h4>
-                        <h6 class="no-bold">Month YYYY - Month YYYY</h6>
-                    </div>
-                    <div class="timeline-body">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum sequi dolorem explicabo minus, magnam, natus veniam sunt et nemo corporis odio? Earum, molestias, corrupti tenetur id iusto omnis quo fuga vitae sunt voluptate, excepturi minus! Explicabo, quo corporis cupiditate porro consectetur facilis deleniti nobis voluptatem eos error et molestiae, tempora optio accusantium? Veritatis impedit, eos quis doloremque quae asperiores omnis adipisci perspiciatis reprehenderit minus molestiae quod quasi neque eligendi pariatur!</p>
-                    </div>
+                <div class="features-card flex">
+                    <img src="ASSETS/asset 13.svg" alt="">
+                    <h3>Prototype tests</h3>
+                    <p>Discover how people navigate your Figma prototypes.</p>
+                    <a href="#" class="secondary-button">Learn more <i class="fa-solid fa-right-long"></i></a>
                 </div>
-                <div class="timeline-divider">
-                    <div class="divider-icon">
-                        <i class="fas fa-plane"></i>
-                    </div>
-                </div>      
+                <div class="features-card flex">
+                    <img src="ASSETS/asset 17.svg" alt="">
+                    <h3>First click tests</h3>
+                    <p>Test interaction with first click and navigation tests.</p>
+                    <a href="#" class="secondary-button">Learn more <i class="fa-solid fa-right-long"></i></a>
+                </div>
+                <div class="features-card flex">
+                    <img src="ASSETS/asset 14.svg" alt="">
+                    <h3>Design surveys</h3>
+                    <p>Get feedback on images, videos or audio files.</p>
+                    <a href="#" class="secondary-button">Learn more <i class="fa-solid fa-right-long"></i></a>
+                </div>
+                <div class="features-card flex">
+                    <img src="ASSETS/asset 15.svg" alt="">
+                    <h3>Preference tests</h3>
+                    <p>Find out which designs users prefer and why.</p>
+                    <a href="#" class="secondary-button">Learn more <i class="fa-solid fa-right-long"></i></a>
+                </div>
+                <div class="features-card flex">
+                    <img src="ASSETS/asset 16.svg" alt="">
+                    <h3>Five second tests</h3>
+                    <p>Test comprehensibility by measuring first impressions.</p>
+                    <a href="#" class="secondary-button">Learn more <i class="fa-solid fa-right-long"></i></a>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="education">
-            <div class="section-heading">
-                <i class="fas fa-graduation-cap"></i><span>Education</span>
+    <section class="big-features-section">
+        <div class="container flex big-feature-container">
+            <div class="feature-img">
+                <img src="./ASSETS/asset 18.png"  alt="">
             </div>
-            <div class="timeline">
-                <div class="timeline-box">
-                    <div class="timeline-head">
-                        <img src="">
-                        <h1>B.TECH in Computer Science & Engineering</h1>
-                        <h4 class="no-bold">Institute Of Engineering And Management-Kolkata</h4>
-                        <h6 class="no-bold">NOVEMBER 2020 - NOW</h6>
-                    </div>
-                    <div class="timeline-body">
-                        <p>I am currently pursuiting my Bachelors in Computer Science And Engineering. My Course work includes Computer Science Fundamentals and working with relevant topics like Databases, Object Oriented Programming and much more</p>
-                    </div>
-                </div>
-                <div class="timeline-box">
-                    <div class="timeline-head">
-                        <img src="">
-                        <h1>HIGHER SECONDARY</h1>
-                        <h4 class="no-bold">Bholananda National Vidyalaya-Barrackpore(CBSE)</h4>
-                        <h6 class="no-bold">APRIL 2018 - MAY 2020</h6>
-                    </div>
-                    <div class="timeline-body">
-                        <p>I completed my Class XII examinations with an aggregate score of 87.6% </p>
-                    </div>
-                </div>
-                <div class="timeline-box">
-                    <div class="timeline-head">
-                        <img src="">
-                        <h1>SECONDARY</h1>
-                        <h4 class="no-bold">Modern English Academy-Barrackpore(ICSE)</h4>
-                        <h6 class="no-bold">2005 -2018</h6>
-                    </div>
-                    <div class="timeline-body">
-                        <p>I completed the first major Board Examination of my life-Class X with an aggregate score of  96.8% </p>
-                    </div>
-                </div>
-                <div class="timeline-divider">
-                    <div class="divider-icon">
-                        <i class="fas fa-car-side"></i></i>
-                    </div>
-                </div>      
+            <div class="feature-desc flex">
+                <h4>Effortless validation for</h4>
+                <h3>Design professionals</h3>
+                <p>Test interfaces, interaction flows, iconography and more, to help you create intuitive and delightful experiences for your users.
+                </p>
             </div>
-        </section>
 
-        <section id="portfolio">
-            <div class="section-heading">
-                <i class="fas fa-list"></i><span>Portfolio</span>
-            </div>
-            <div id="portfolio-container">
-                <div class="portfolio-image-container">
-                    <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000025_1550237330_codezen_2.png">
-                    <div class="middle text-center">
-                        <div class="portfolio-text">Write here basic details about the project.</div>
-                    </div>
-                </div>
-                <div class="portfolio-image-container">
-                    <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000025_1550237330_codezen_2.png">
-                    <div class="middle text-center">
-                        <div class="portfolio-text">Write here basic details about the project.</div>
-                    </div>
-                </div>
-                <div class="portfolio-image-container">
-                    <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000025_1550237330_codezen_2.png">
-                    <div class="middle text-center">
-                        <div class="portfolio-text">Write here basic details about the project.</div>
-                    </div>
-                </div>
-                <div class="portfolio-image-container">
-                    <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000024_1550237299_codezen.png">
-                    <div class="middle text-center">
-                        <div class="portfolio-text">Write here basic details about the project.</div>
-                    </div>
-                </div>
-                <div class="portfolio-image-container">
-                    <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000024_1550237299_codezen.png">
-                    <div class="middle text-center">
-                        <div class="portfolio-text">Write here basic details about the project.</div>
-                    </div>
-                </div>
-                <div class="portfolio-image-container">
-                    <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000024_1550237299_codezen.png">
-                    <div class="middle text-center">
-                        <div class="portfolio-text">Write here basic details about the project.</div>
-                    </div>
-                </div>
-                
-            </div>
-        </section>
 
-        <section id="contact">
-            <div class="section-heading">
-                <i class="far fa-address-card"></i><span>Contact</span>
-            </div>
-            <div class="contact-container">
-                <div class="contact-form-container">
-                    <form>
-                        <div><input type="text" placeholder="Your Name" class="input-field" required></div>
-                        <div><input type="email" placeholder="Your Email" class="input-field" required></div>
-                        <div><textarea class="input-field" placeholder="Message"></textarea></div>
-                        <div><a href="mailto:adrishratul@gmail.com"><input type="button" class="white-border-transparent-button" id="submit" value="SEND MESSAGE"></a></div>
-                    </form>
-                </div>
-                <div class="address-container">
-                    <h2>Get in touch</h2>
-                    <p>I am always ready to help! Please reach out to me on my Likedin id @Adrish Bhattacharya.
-                        You can email me at <span>adrishratul@gmail.com</span></p>
+        </div>
+    </section>
+      
 
-                    <h2>My Address</h2>
-                    <div><i class="fas fa-map-marker-alt"></i>13 AnantaRam Mukherjee Lane , Ramkrishnapur , Howrah 711101</div>
-                    <div><i class="fas fa-mobile"></i>7439956164 / 9831207588</div>
-                    <div><i class="far fa-envelope"></i>adrishratul@gmail.com / ADRISH.BHATTACHARYA2020@iem.edu.in</div>
-                </div>
-            </div>
-            <div class="bottom-list">
-                <ul class="horizontal-list text-center social-links" style="margin: 0;">
-                    <li><a href="https://www.linkedin.com/in/adrish-bhattacharya-2a536a205/" ><i class="fab fa-linkedin-in"></i></a></li>
-                    <li>
-                        <a href="https://stackoverflow.com/users/20955435/adrish-bhattacharya" ><i class="fab fa-stack-overflow"></i></a>
-                    </li>
-                    <li>
-                        <a href="#" ><i class="fab fa-google-plus-g"></i></a>
-                    </li>
-                    <li>
-                        <a href="#" ><i class="fab fa-facebook-f"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.quora.com/profile/Adrish-Bhattacharya-14" ><i class="fab fa-quora"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </section>
 
-    </main>
+    <section class="big-features-section">
+        <div class="container flex big-feature-container">
+            
+            <div class="feature-desc flex">
+                <h4>Effortless validation for</h4>
+                <h3>Design professionals</h3>
+                <p>Test interfaces, interaction flows, iconography and more, to help you create intuitive and delightful experiences for your users.
+                </p>
+            </div>
+            <div class="feature-img">
+                <img src="./ASSETS/asset 24.png"  alt="">
+            </div>
 
+
+        </div>
+    </section>
+
+    <section class="big-features-section">
+        <div class="container flex big-feature-container">
+            <div class="feature-img">
+                <img src="./ASSETS/asset 21.png"  alt="">
+            </div>
+            <div class="feature-desc flex">
+                <h4>Effortless validation for</h4>
+                <h3>Design professionals</h3>
+                <p>Test interfaces, interaction flows, iconography and more, to help you create intuitive and delightful experiences for your users.
+                </p>
+            </div>
+            
+
+
+        </div>
+    </section>
+    <div class="examples-section">
+       <div class="container">
+        <div class="examples-header flex">
+            <div class="examples-heading-text"><h3>Can users complete a task in my software interface?</h3></div>
+           <a href="#" class="secondary-button">See more examples <i class="fa-solid fa-right-long"></i></a>
+        </div>
+        
+       <div class="examples-area flex">
+        <a href="#" class="examples-card">
+            <h3 class="card-text">Can user complete a task in my software interface?</h3>
+        </a>
+        <a class="examples-card" href="#" style="background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url(./assets/asset\ 37.jpeg); background-size: cover;">
+            <h3 class="card-text">Can users find important pages on my website?</h3>
+        </a>
+        <a class="examples-card" href="#"style="background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url(./assets/asset\ 38.jpeg); background-size: cover;">
+            <h3 class="card-text">Is my website’s intended audience clear? </h3>
+        </a>
+        <a class="examples-card" href="#"style="background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url(./assets/asset\ 39.jpeg); background-size: cover;">
+            <h3 class="card-text">Do visitors understand what a page is about?</h3>
+        </a>
+    </div>
+
+    </div>
+
+
+    
+
+    
+    <section class="cta-section">
+        <div class="container flex cta-section-container">
+            <h2>Start Testing Today</h2>
+            <p>Take the guesswork out of design decisions</p>
+            <a href="#" class="primary-button">Get Started</a>
+        </div>
+    </section>
+    
+    
+    <footer>
+      <div class="container flex footer-container">
+        <a href="#" class="company-logo">
+            <img src="./ASSETS/asset 1.png" alt="company-logo">
+        </a>
+        <div class="link-column flex">
+            <h4> Product</h4>
+              <a href="#" class="hover-link">Overview</a>
+              <a href="#" class="hover-link">Pricing</a>
+              <a href="#" class="hover-link">Usability Hub</a>
+              <a href="#" class="hover-link">Customers Page</a>
+              <a href="#" class="hover-link">Status Page</a>
+
+        </div>
+        <div class="link-column flex">
+            <h4> Methodology</h4>
+              <a href="#" class="hover-link">Overview</a>
+              <a href="#" class="hover-link">Pricing</a>
+              <a href="#" class="hover-link">Usability Hub</a>
+              <a href="#" class="hover-link">Customers Page</a>
+              <a href="#" class="hover-link">Status Page</a>
+
+        </div>
+        <div class="link-column flex">
+            <h4> Resources</h4>
+              <a href="#" class="hover-link">Overview</a>
+              <a href="#" class="hover-link">Pricing</a>
+              <a href="#" class="hover-link">Usability Hub</a>
+              <a href="#" class="hover-link">Customers Page</a>
+              <a href="#" class="hover-link">Status Page</a>
+
+        </div>
+
+      </div>
+
+    </footer>
+    <div class="subfooter">
+        <div class="container flex subfooter-container">
+            <div class="hover-link" href=""#>Privacy Policy</div>
+            <div class="hover-link" href=""#>Terms & Condition</div>
+            <div class="hover-link" href=""#>Security Information</div>
+            <div class="hover-link" href=""#><i class="fa-brands fa-facebook"></i></div>
+            <div class="hover-link" href=""#><i class="fa-brands fa-twitter"></i></div>
+        </div>
+    </div>
+    <div class="spacer" style="height: 100vh;"></div>
+
+
+
+    <script src="https://kit.fontawesome.com/5d99cc96a7.js" crossorigin="anonymous"></script>
 </body>
 </html>
